@@ -2,22 +2,96 @@
     margin: 0;
     padding: 0;
 }
+body{
+    display: flex;
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
 /* nav bar */
 .nav-bar{
     height: 722.400px;
     width: 40px;
-    background-color: #161717;
+    background-color: #1b1b1b;
     padding: 10px 12px;
+    border-right: 1px solid rgb(114, 114, 116);
+    position: fixed;
+}
+.nav-bar2{
+    height: 634.400px;
+    width: 40px;
+}
+.nav-bar3{
+    height: 234.800px;
+    width: 40px;
+}
+.icon1{
+    border-radius: 50%;
+    background-color: #3a3a3b;
+}
+.icon1:hover{
+    cursor: pointer;
+}
+.icon2{
+    margin-bottom: 5px;
+}
+.notification-icon {
+    position: relative;
+}
+
+.notification-badge {
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    background-color: green; /* WhatsApp green */
+    color: black;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 50%;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 6px;
+    height: 15px;
+}
+.setting-profile{
+    height: 88px;
+    width: 40px;
+}
+.my-dp{
+    height: 24px;
+    width: 24px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.my-dp:hover{
+    cursor: pointer;
+    background-color: #3a3a3b;
+}
+.my-profile{
+    border-radius: 50%;
 }
 /* contact bar */
 .contact-page{
-    padding-left: 65px;
+    /* width: 456.675px; */
+    padding-left: 1px;
+    background-color: #161717;
+    margin-left: 65px;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 }
 .contact-bar{
     height: 44px;
     width: 416.675px;
-    background-color: #161717;
     display: flex;
     align-items: center;
     padding: 10px 20px;
@@ -29,7 +103,7 @@
 }
 .app-name{
     color: white;
-    height: 28px;
+    height: 40px;
     width: 326.68px;
     font-size: 25px;
     display: flex; 
@@ -45,13 +119,13 @@
     border-radius: 50%;
 }
 .hover-bg-change :hover{
- background-color: #3a3a3b;  
+    cursor: pointer;
+    background-color: #3a3a3b;  
 }
 /* Search bar */
 .search-bar1{
     height: 49px;
     width: 456.675px;
-    background-color: #161717;
 }
 .search-border2{
     height: 44px;
@@ -88,7 +162,7 @@
 }
 .input-search{
     height: 22.050px;
-    width: 360.675px;
+    width: 370.675px;
     background-color: #3a3a3b;
     border: none;
     outline: none;
@@ -99,7 +173,6 @@
 .section-bar{
     height: 31.988px;
     width: 426.675px;
-    background-color: #161717;
     padding: 2px 10px 7px 20px;
     display: flex;
 }
@@ -122,7 +195,6 @@
 
 .a-href-b {
     display: inline-block;
-    background-color: #161717;
     border-radius: 20px;
     padding: 6px 12px;
     border: 1px solid #3a3a3b;
@@ -132,4 +204,167 @@
 }
 .a-href-b:hover {
     background-color: #3a3a3b;
+}
+/* contact-list and archived-bar */
+.contact-list{
+    height: 819.412px;
+    /* width: 446.275px; */
+    flex: 1;
+    overflow-y: auto;
+}
+.archived-bar{
+    height: 49px;
+    width: 438.275px;
+    margin: 4px;
+    display: flex;
+}
+.archived-bar:hover{
+    cursor: pointer;
+}
+.archived-icon{
+    height: 49px;
+    width: 49px;
+    padding-left: 14px;
+    padding-right: 14px;
+}
+.archived{
+    height: 49px;
+    width: 290.875px;
+    padding-right: 15px;
+}
+.text-archived{
+    margin-top: 10px;
+    height: 22.400px;
+    width: 290.875px;
+    color: white;
+    align-items: center;
+}
+.archived-text-border{
+    height: 49px;
+    width: 22.400px;
+    padding-right: 13px;
+    display: flex;
+    align-items: center;
+}
+.archived-text{
+    height: 21.600px;
+    width: 20.400px;
+    margin-right: 2px;
+}
+.unseen-archived-text{
+    height: 12px;
+    width: 10.800px;
+    padding: 3.600px 4.800px 4.800px 4.800px;
+    color: green;
+}
+/* All-contact */
+.all-contact{
+    height:763.412px;
+    width: 446.275px;
+    padding-top: 4px;
+    /* background-color: #161717; */
+}
+.contact{
+    height: 76px;
+    width: 446.275px;
+}
+.contact-border2{
+    height: 72px;
+    width: 435.275px;
+    display: flex;
+    border-radius: 15px;
+    margin-left: 5px;
+    transition: background-color 0.2s ease;
+    background-color: #3a3a3b;
+}
+.contact-border1{
+    height: 72px;
+    width: 435.275px;
+    /* width: 446.275px; */
+    display: flex;
+    border-radius: 15px;
+    margin-left: 5px;
+    transition: background-color 0.2s ease;
+
+}
+
+.contact-border1:hover{
+    background-color: #3a3a3b;
+    cursor: pointer;
+}
+.contact-dp{
+    height: 73px;
+    width: 49px;
+    padding-left: 13px;
+    padding-right: 15px;
+    margin-top: -1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ac{
+    border-radius: 50%;
+}
+.contact-name{
+    height: 72px;
+    width: 334.275px;
+    padding-right: 15px;
+}
+.name-time{
+    /* height: 22.400px; */
+    /* width: 334.275; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+.name{
+    height: 22.400px;
+    width: 88.575;
+    color: white;
+}
+.text-time{
+    color: #ffffff99;
+    font-size: 11px;
+    margin-top: 2px;
+}
+.text-pin{
+    height: 20px;
+    width: 334.275px;
+    display: flex;
+}
+.seen-text{
+    height: 20px;
+    width: 308.275px;
+    display: flex;
+    color:#ffffff99;
+    font-size: 12px;
+}
+.chat-pin{
+    margin-left: 13px;
+}
+.unseen-text-time{
+    color: green;
+    font-size: 11px;
+    margin-top: 2px;
+}
+.unseen-text{
+    height: 12px;
+    width: 10.800px;
+    padding: 3.600px 4.800px 4.800px 4.800px;
+    border-radius: 50%;
+    background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* message box */
+.message-box{
+    height: 742.400px;
+    width: 1009.600px;
+}
+.message-box1{
+    height:2605px;
+    width: 999;
+    padding-bottom: 8px;
 }
